@@ -21,16 +21,16 @@ DeepShield is a deepfake detection project with a Chrome extension for analyzing
 
 ```text
 DeepShield/
-├── Code/                         # Python detection tools and Node.js backend
-│   ├── app.py                    # Streamlit dashboard
-│   ├── backgroundProcess.js      # Express API server
-│   ├── predict.py                # Python inference worker
-│   ├── requirements.txt          # Python dependencies
-│   └── train.py                  # Model training script
-└── cyberSentinel-extension/      # Chrome extension
-    ├── content-script.js
-    ├── manifest.json
-    └── frontend/                 # React/Vite popup
++-- Code/                         # Python detection tools and Node.js backend
+|   +-- app.py                    # Streamlit dashboard
+|   +-- backgroundProcess.js      # Express API server
+|   +-- predict.py                # Python inference worker
+|   +-- requirements.txt          # Python dependencies
+|   +-- train.py                  # Model training script
++-- DeepShield-extension/        # Chrome extension
+    +-- content-script.js
+    +-- manifest.json
+    +-- frontend/                 # React/Vite popup
 ```
 
 ## Setup
@@ -80,12 +80,12 @@ The server listens on `http://localhost:5000`.
 Build the popup from the project root:
 
 ```bash
-cd cyberSentinel-extension/frontend
+cd DeepShield-extension/frontend
 npm install
 npm run build
 ```
 
-Then open `chrome://extensions` in Chrome, enable **Developer mode**, choose **Load unpacked**, and select the `cyberSentinel-extension` folder.
+Then open `chrome://extensions` in Chrome, enable **Developer mode**, choose **Load unpacked**, and select the `DeepShield-extension` folder.
 
 ## Model and data
 
