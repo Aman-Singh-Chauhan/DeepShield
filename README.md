@@ -1,6 +1,5 @@
 # DeepShield
 
-**Team:** Aman Singh Chauhan
 
 DeepShield is a deepfake detection project with a Chrome extension for analyzing video-call content and Python tools for image analysis. The extension captures video frames and sends them to a local backend for machine-learning inference.
 
